@@ -27,55 +27,9 @@
 	   </ul>
 	 </div>
 	<!-- Page header -->
-	<div class="page-header">
-		<div class="page-header-content" style="padding:0px;margin:0px;">
-			<div class="page-title">
-				<div class="col-md-8" >
-					<div class="col-md-4">
-						<div class="form-group" >
-							<button type="button" class="btn btn-default daterange-predefined"  style="padding-right:0px;">
-								<i class="icon-calendar22 position-left"></i>
-								<span>February 8, 2018 &nbsp; - &nbsp; March 9, 2018</span>
-								<b class="caret"></b>
-							</button>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="form-group" >
-							<select class="bootstrap-select" data-width="100%" tabindex="-98">
-								<option value="" selected>Summary View</option>
-								<option value="Detailed View">Detailed View</option>
-								<option value="Day View">Day View</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="form-group">
-							<select class="bootstrap-select" data-width="100%" tabindex="-98">
-								<option value="" selected>All Employees</option>
-								<option value="Paul Molive">Paul Molive</option>
-								<option value="Anna Mull">Anna Mull</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="col-md-8 text-right" style="padding-right:5px;">
-						<div class="form-group">
-							<a href="javascript:void(0);" class="btn btn-default"><h6 class="text-semibold text-muted"><i class="icon-download7"></i> Export</h6></a>
-						</div>
-					</div>
-					<div class="col-md-4" style="padding:0px;margin:0px;">
-						<div class="form-group">
-							<a href="javascript:void(0);" class="btn btn-success"><h6 class="text-semibold">Add a Time Card</h6></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	    <div class="panel panel-flat" style="background:#F9F9FB;padding:25px;height:90px;">
+
+	    <div class="panel panel-flat" style="background:white;padding:25px;height:90px;">
       <div class="col-md-12">
         <div class="col-md-3">
 			<div class="form-group" >
@@ -96,74 +50,24 @@
 							</select>
 						</div>
 			</div>
-			<div class="col-md-2">
-				<div class="form-group">					
-					<select data-placeholder="Select a State..." class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-						<option>By Status</option>
-						<optgroup label="Mountain Time Zone">
-							<option value="AZ">Arizona</option>
-							<option value="CO">Colorado</option>
-							<option value="ID">Idaho</option>
-							<option value="WY">Wyoming</option>
-						</optgroup>
-						<optgroup label="Central Time Zone">
-							<option value="AL">Alabama</option>
-							<option value="IA">Iowa</option>
-							<option value="KS">Kansas</option>
-							<option value="KY">Kentucky</option>
-						</optgroup>
-						<optgroup label="Eastern Time Zone">
-							<option value="CT">Connecticut</option>
-							<option value="FL">Florida</option>
-							<option value="MA">Massachusetts</option>
-							<option value="WV">West Virginia</option>
-						</optgroup>
-					</select>
-				</div>
-			</div>
-			<div class="col-md-2">
-					<div class="form-group">					
-					<select data-placeholder="Select a State..." class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-						<option>By Role</option>
-						<optgroup label="Mountain Time Zone">
-							<option value="AZ">Arizona</option>
-							<option value="CO">Colorado</option>
-							<option value="ID">Idaho</option>
-							<option value="WY">Wyoming</option>
-						</optgroup>
-						<optgroup label="Central Time Zone">
-							<option value="AL">Alabama</option>
-							<option value="IA">Iowa</option>
-							<option value="KS">Kansas</option>
-							<option value="KY">Kentucky</option>
-						</optgroup>
-						<optgroup label="Eastern Time Zone">
-							<option value="CT">Connecticut</option>
-							<option value="FL">Florida</option>
-							<option value="MA">Massachusetts</option>
-							<option value="WV">West Virginia</option>
-						</optgroup>
-					</select>
-				</div>
-			  
-			</div>
+
+	<div class="col-md-3">
+						<div class="form-group">
+							<select class="bootstrap-select" data-width="100%" tabindex="-98">
+								<option value="" selected>All Employees</option>
+								<option value="Paul Molive">Paul Molive</option>
+								<option value="Anna Mull">Anna Mull</option>
+							</select>
+						</div>
+					</div>
+		
 			<div class="col-md-1">
-			  <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-				<i class="icon-printer2">
-				</i>
-			  </span>
-			    <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-				<i class="icon-file-download">
-				</i>
-			  </span>
-			</div>
-			<div class="col-md-1">
-			<button type="button" class="btn border-slate text-slate-800 btn-flat">Invite Team</button>
+			<button type="button" class="btn border-slate text-slate-800 btn-flat"><i class="icon-download7"></i>&nbsp;Export</button>
 			
 			</div>
-				<div class="col-md-1">
+				<div class="col-md-2">
 			
-					<button type="button" class="btn btn-primary" style="width:100%;">Add
+					<button type="button" class="btn btn-primary" style="width:100%;">Add Time Card
 			  </button>
 			</div>
 		
@@ -231,12 +135,10 @@
 							</tr>
 						</thead>
 						<tbody>
-							<?php
-								for($i=0;$i<10;$i++){
-							?>
+							
 							<tr>
-								<td>Victoria</td>
-								<td>Margaret</td>
+								<td>Mario </td>
+								<td>Speedwagon</td>
 								<td></td>
 								<td></td>
 								<td>90.00</td>
@@ -250,9 +152,119 @@
 								<td>$0.00</td>
 								<td>$0.00</td>
 							</tr>
-							<?php
-								}
-							?>
+									<tr>
+								<td>Petey </td>
+								<td>Cruiser</td>
+								<td></td>
+								<td></td>
+								<td>90.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+							</tr>
+									<tr>
+								<td>Anna </td>
+								<td>Sthesia</td>
+								<td></td>
+								<td></td>
+								<td>90.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+							</tr>
+									<tr>
+								<td>Paul </td>
+								<td>Molive</td>
+								<td></td>
+								<td></td>
+								<td>90.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+							</tr>
+									<tr>
+								<td>Anna </td>
+								<td>Mull</td>
+								<td></td>
+								<td></td>
+								<td>90.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+							</tr>
+									<tr>
+								<td>Gail </td>
+								<td>Forcewind</td>
+								<td></td>
+								<td></td>
+								<td>90.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+							</tr>
+									<tr>
+								<td>Paige </td>
+								<td>Turner</td>
+								<td></td>
+								<td></td>
+								<td>90.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+							</tr>
+									<tr>
+								<td>Bob </td>
+								<td>Frapples</td>
+								<td></td>
+								<td></td>
+								<td>90.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+								<td>$0.00</td>
+							</tr>
+							
 						</tbody>
 					</table>
 				</div>

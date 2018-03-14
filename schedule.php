@@ -90,9 +90,9 @@
 		<div class="col-md-2">
 			<ul class="nav nav-pills nav-pills-toolbar col-md-12" style="">
 				
-					<li class="active col-md-4" style="padding:0 !important;"><a href="#toolbar-pill1" data-toggle="tab" aria-expanded="true" >Day </a></li>
-					<li class="col-md-4" style="padding:0 !important;"><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Week</a></li>
-					<li class="col-md-4" style="padding:0 !important;"><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Month</a></li>
+					<li class="active col-md-4 text-center" style="padding:0 !important;"><a href="#toolbar-pill1" data-toggle="tab" aria-expanded="true" >Day </a></li>
+					<li class="col-md-4 text-center" style="padding:0 !important;"><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Week</a></li>
+					<li class="col-md-4 text-center" style="padding:0 !important;"><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Month</a></li>
 				
 			</ul>
 		</div>

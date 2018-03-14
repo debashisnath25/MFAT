@@ -13,8 +13,8 @@
 					<li><a href="ontime_arrival.php"><span>On-Time Arrival</span></a></li>
 					<li><a href="shift_feedback.php"><span>Shift Feedback</span></a></li>
 					<li><a href="hourly_labour.php"><span>Hourly Labor Costs</span></a></li>
-					<li><a href="labour_by_type.php"><span>Labor By Type</span></a></li>
-					<li><a href="labour_cost_summery.php"><span>Labor Cost Summary</span></a></li>
+					<li><a href="labour_by_type.php"><span>Labour By Type</span></a></li>
+					<li><a href="labour_cost_summery.php"><span>Labour Cost Summary</span></a></li>
 					<li><a href="sales_summery.php"><span>Sales Summary</span></a></li>
 					<li><a href="department.php"><span>Division</span></a></li>
 					<!-- /main -->
