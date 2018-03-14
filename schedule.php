@@ -105,7 +105,7 @@
 		
 			</div>
 	
-			<div class="col-md-4">
+			<div class="col-md-2">
 				<div class="col-md-2 ">
 				  <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
 					<i class="icon-printer2">
@@ -137,7 +137,7 @@
 				  
 				</div>
 			</div>
-			<div class="col-md-1">
+			<div class="col-md-2">
 			<button type="button" class="btn border-slate text-slate-800 btn-flat">Publish</button>
 			
 			</div>
