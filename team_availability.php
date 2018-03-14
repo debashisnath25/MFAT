@@ -28,62 +28,11 @@
 	<!-- /second navbar -->
 
 	<?php include("schedule_header.php");?>
-	<div class="panel panel-flat" style="background:white;padding:25px;height:90px;">
+	<div class="panel panel-flat" style="background:white;height:40px;">
       <div class="col-md-12">
-        <div class="col-md-2">
-			<div class="form-group">					
-				<select data-placeholder="Select a State..." class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-					<option selected disabled>Division</option>
-					<option value="AZ">Division One</option>
-					<option value="CO">Division Two</option>
-				</select>
-			</div>
-        </div>
-		
-		<div class="col-md-2">
-			<ul class="nav nav-pills nav-pills-toolbar col-md-12" style="">
-				<li class="active col-md-4 text-center" style="padding:0 !important;"><a href="#toolbar-pill1" data-toggle="tab" aria-expanded="true" >Day </a></li>
-				<li class="col-md-4 text-center" style="padding:0 !important;"><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Week</a></li>
-				<li class="col-md-4 text-center" style="padding:0 !important;"><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Month</a></li>
-			</ul>
-		</div>
-		<div class="col-md-4"></div>
-	
-			<div class="col-md-2">
-				<div class="col-md-2 ">
-				  <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-					<i class="icon-printer2">
-					</i>
-				  </span>
-				 </div>
-				 <div class="col-md-2 ">
-					<span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-					<i class="icon-database">
-					</i>
-				  </span>
-				 </div>
-				 <div class="col-md-2 ">
-					<span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-					<i class="icon-file-download">
-					</i>
-				  </span>
-				 </div>
-				<div class="col-md-2 ">
-					<span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-					<i class="icon-file-plus2">
-					</i>
-				  </span>
-				  </div>
-				  <div class="col-md-2 ">
-					<span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-					<i class="icon-close2"></i>
-				  </span>
-				  
-				</div>
-			</div>
-			<div class="col-md-2">
-			<button type="button" class="btn border-slate text-slate-800 btn-flat">Publish</button>
-			
+		<div class="col-md-10"></div>
+			<div class="col-md-2 text-right">
+				<a href="javascript:void(0);"><h5 class="text-semibold">Export Report</h5></a>
 			</div>
       </div>
     </div>
@@ -105,7 +54,9 @@
 						<table class="table table-bordered">
 							<thead style="background:#F2F2F7;">
 								<tr>
-									<th><span style="font-size:16px;color:#0088cc" data-toggle="modal" data-target="#modal_form_vertical"><i class="icon-pen-plus"></i>&nbsp;Add New Employee</span></th>
+									<th>
+									<input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015">
+									</th>
 									<th style="font-weight: 700;color:#959eac;font-size:17px;">Monday </br><span style="font-size:12px;font-weight:600">15.00 hrs / $0.00</span></th>
 									<th style="font-weight: 700;color:#959eac;font-size:17px;">Tuesday </br><span style="font-size:12px;font-weight:600">15.00 hrs / $0.00</span></th>
 									<th style="font-weight: 700;color:#959eac;font-size:17px;">Wednesday</br><span style="font-size:12px;font-weight:600">15.00 hrs / $0.00</span></th>
@@ -134,7 +85,7 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
@@ -145,7 +96,7 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
@@ -156,7 +107,7 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
@@ -167,35 +118,41 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 									<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
-											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+									<td style="vertical-align: top;">
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
-											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+									<td style="vertical-align: top;">
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -219,7 +176,7 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
@@ -230,53 +187,63 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -300,7 +267,7 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
@@ -311,53 +278,63 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px;width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -381,63 +358,75 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -465,63 +454,75 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -549,63 +550,75 @@
 											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
 												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #d1e7ea;">
 													<div style="width: 100%;color: white;">
-														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">7am - 10pm</div>
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">PREFERRED<br/><div style="font-size:10px;">7am - 10pm</div></div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -629,65 +642,79 @@
 												</div>
 									</td>
 									<td style="vertical-align: top;">
-											<div style="width: 100%;display: table;position: relative;">
-												<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-													<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-														add +
+											<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
 													</div>
 												</div>
 											</div>
+										</div>
 										</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 									<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 									<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 									<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 
 									<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 									<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -711,65 +738,79 @@
 												</div>
 									</td>
 									<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 									<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</td>
 											<td style="vertical-align: top;">
-										<div style="width: 100%;display: table;position: relative;">
-											<div style="width: 100%;height: 35px;line-height: 35px;cursor: pointer;position: relative;vertical-align: middle;text-align: center;text-transform: uppercase;display: table-cell;">
-												<div style="border-radius: 3px; width:100%;display: inline-block;padding: 2px 5px;color: black; border: 1px solid #959eac;font-size: 10px;text-transform: uppercase;cursor: pointer;" data-toggle="modal" data-target="#modal_add_schedule">
-													add +
+										<div style="width:100%;display: table;position: relative;padding:15px !important;">
+											<div style="display: table;width: 100%;text-transform: uppercase;cursor: pointer;position: relative;text-align: center;font-size: 11px;font-size: 0.6875rem;">
+												<div style="display: table-cell;height: 35px; vertical-align: middle; width: 100%;background-color: #f4f4f4;">
+													<div style="width: 100%;color: white;">
+														<div style="display: inline-block;color: #959eac;font-weight: 700;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size:12px;">UNAVAILABLE<br/><div style="font-size:10px;">10am - 8pm</div></div>
+													</div>
 												</div>
 											</div>
 										</div>

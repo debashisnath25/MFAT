@@ -14,6 +14,7 @@
   <body>
     <!-- Main navbar -->
     <?php include("header.php");?>
+	<?php include("schedule_header.php");?>
     <!-- /main navbar -->
     <div class="panel panel-flat" style="background:#fff;padding:25px;height:90px;">
       <div class="col-md-12">
@@ -26,8 +27,6 @@
 		<div class="col-md-1">
 			<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_time_off"><span class="text-bold" style="font-size:13px;">Add Time-off</span></button>
 		</div>
-		
-		
       </div>
     </div>
     <!-- Page header -->
@@ -125,6 +124,96 @@
 			</div>
 			<!-- /page container -->
 			<!-- Footer -->
+	<div id="modal_time_off" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="modal-header bg-info">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h5 class="modal-title">Add Time-off</h5>
+			</div>
+			<form method="POST">
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-3">
+							<h6 class="text-semibold">Employee</h6>
+						</div>
+						<div class="col-md-9">
+							<select class="bootstrap-select" data-width="100%" tabindex="-98">
+								<option value="Mario Speedwagon">Mario Speedwagon</option>
+								<option value="Petey Cruiser">Petey Cruiser</option>
+								<option value="Anna Sthesia">Anna Sthesia</option>
+								<option value="Paul Molive">Paul Molive</option>
+								<option value="Anna Mull">Anna Mull</option>
+								<option value="Gail Forcewind">Gail Forcewind</option>
+								<option value="Paige Turner">Paige Turner</option>
+								<option value="Bob Frapples">Bob Frapples</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<h6 class="text-semibold">Whole Day</h6>
+						</div>
+						<div class="col-md-9">
+							<input type="checkbox" class="switchery" checked="checked" style="display: none;" data-switchery="true">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<h6 class="text-semibold">Start Date</h6>
+						</div>
+						<div class="col-md-9">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="icon-calendar22"></i></span>
+								<input type="text" class="form-control daterange-single" value="03/18/2013">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<h6 class="text-semibold">End Date</h6>
+						</div>
+						<div class="col-md-9">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="icon-calendar22"></i></span>
+								<input type="text" class="form-control daterange-single" value="03/18/2013">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<h6 class="text-semibold">Category</h6>
+						</div>
+						<div class="col-md-9">
+							<select class="bootstrap-select" data-width="100%" tabindex="-98">
+								<option value="vacation">Vacation (Unpaid)</option>
+								<option value="paid_vacation">Vacation (Paid)</option>
+								<option value="holiday">Holiday</option>
+								<option value="sick_leave">Sick Leave</option>
+								<option value="personal_medical_emergency">Personal Medical Emergency</option>
+								<option value="family_medical_emergency">Family Medical Emergency</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<h6 class="text-semibold">Reason</h6>
+						</div>
+						<div class="col-md-9">
+							<textarea rows="3" cols="3" maxlength="500" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 500 chars."></textarea>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="modal-footer">
+					<button type="reset" class="btn btn-link">Reset</button>
+					<button type="button" class="btn btn-success">Save changes</button>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
     <?php include("footer.php");?>
     
 	<script type="text/javascript" src="js/datatables.min.js"></script>
@@ -149,34 +238,14 @@
 
 	<script type="text/javascript" src="js/interactions.min.js"></script>
 
-	<script type="text/javascript" src="js/form_select2.js"></script>
+	<script type="text/javascript" src="js/bootstrap_select.min.js"></script>
+	<script type="text/javascript" src="js/form_bootstrap_select.js"></script>
 
-    </script>
-<div id="modal_time_off" class="modal fade">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header bg-success">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h6 class="modal-title">Success header</h6>
-			</div>
+	<script type="text/javascript" src="js/uniform.min.js"></script>
+	<script type="text/javascript" src="js/switchery.min.js"></script>
+	<script type="text/javascript" src="js/switch.min.js"></script>
+	<script type="text/javascript" src="js/form_checkboxes_radios.js"></script>
 
-			<div class="modal-body">
-				<h6 class="text-semibold">Text in a modal</h6>
-				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
-				<hr>
-
-				<h6 class="text-semibold">Another paragraph</h6>
-				<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-			</div>
-
-			<div class="modal-footer">
-				<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-success">Save changes</button>
-			</div>
-		</div>
-	</div>
-</div>
   </body>
 </html>
