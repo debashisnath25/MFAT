@@ -24,14 +24,10 @@
 	<!-- /main navbar -->
 	<div class="navbar-collapse collapse" id="navbar-second-toggle" style="background:white;">
 	   <ul class="nav navbar-nav">
-			<li class="active"><a href="index.html" style="color:#9c70c2;font-weight: 600;"> Manager</a></li>
-
-			<li class="dropdown mega-menu mega-menu-wide">
-			 <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#9c70c2;font-weight: 600;">My Week </a>
-			</li>
+			<li class="active"><a href="dashboard.php" style="color:#9c70c2;font-weight: 600;"> Manager</a></li>
+			<li><a href="my_week.php" style="color:#9c70c2;font-weight: 600;">My Week </a></li>
 	   </ul>
-
-  </div>
+	 </div>
 	<!-- Page header -->
 	
 	<!-- /page header -->
@@ -74,7 +70,7 @@
 										<h6 class="panel-title text-semibold">Today's Schedule</h6>
 									</div>
 									<div class="col-md-6 text-right">
-										<a href="javascript:void(0);" class="btn btn-primary">View Full Schedule</a>
+										<a href="schedule.php" class="btn btn-primary">View Full Schedule</a>
 									</div>
 								</div>
 							</div>
@@ -180,7 +176,7 @@
 									</div>
 								</div>
 								<div class="panel-heading text-center">
-									<a href="javascript:void(0);" class="btn btn-primary">View all Reports</a>
+									<a href="reports.php" class="btn btn-primary">View all Reports</a>
 								</div>
 							</div>
 						</div>

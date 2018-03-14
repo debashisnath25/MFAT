@@ -24,14 +24,10 @@
 	<!-- /main navbar -->
 	<div class="navbar-collapse collapse" id="navbar-second-toggle" style="background:white;">
 	   <ul class="nav navbar-nav">
-			<li class="#"><a href="index.html" style="color:#9c70c2;font-weight: 600;"> Manager</a></li>
-
-			<li class="dropdown mega-menu mega-menu-wide">
-			 <a href="active" class="dropdown-toggle" data-toggle="dropdown" style="color:#9c70c2;font-weight: 600;">My Week </a>
-			</li>
+			<li class="active"><a href="dashboard.php" style="color:#9c70c2;font-weight: 600;"> Manager</a></li>
+			<li><a href="my_week.php" style="color:#9c70c2;font-weight: 600;">My Week </a></li>
 	   </ul>
-
-  </div>
+	 </div>
 	<!-- Page header -->
 	
 	<!-- /page header -->
