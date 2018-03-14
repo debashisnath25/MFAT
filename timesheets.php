@@ -294,7 +294,11 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"><i class="icon-close2"></i></button>
+								<div class="modal-header bg-info">
+									<button type="button" class="close" data-dismiss="modal"><i class="icon-close2"></i></button>
+									<h5 class="modal-title">Add New Timesheet</h5>
+							   </div>
+								
 							</div>
 							<div class="panel panel-flat" style="border:none;">
 								<div class="panel-body">
