@@ -30,7 +30,7 @@
 	<div class="page-header">
 		<div class="page-header-content" style="padding:0px;margin:0px;">
 			<div class="page-title">
-				<div class="col-md-8">
+				<div class="col-md-8" >
 					<div class="col-md-4">
 						<div class="form-group" >
 							<button type="button" class="btn btn-default daterange-predefined"  style="padding-right:0px;">
@@ -93,23 +93,25 @@
 					</div>
 
 					<div class="panel-body">
-						<div class="col-md-2">
-							<h6 class="panel-title text-semibold"><span class="text-muted ">Total Paid Hours</span>&nbsp; 0.00</h6>
-						</div>
-						<div class="col-md-2">
-							<h6 class="panel-title text-semibold"><span class="text-muted">Estimated Wages <i class="icon-question4"></i></span>&nbsp; $0.00</h6>
-						</div>
-						<div class="col-md-2">
-							<h6 class="panel-title text-semibold"><span class="text-muted">Net Sales <i class="icon-question4"></i></span>&nbsp; $0.00</h6>
-						</div>
-						<div class="col-md-2">
-							<h6 class="panel-title text-semibold"><span class="text-muted">Total Tips</span>&nbsp; $0.00</h6>
-						</div>
-						<div class="col-md-2">
-							<h6 class="panel-title text-semibold"><span class="text-muted">Overtime <i class="icon-question4"></i></span>&nbsp; $0.00</h6>
-						</div>
-						<div class="col-md-2">
-							<h6 class="panel-title text-semibold"><span class="text-muted">Early Clock-Ins <i class="icon-question4"></i></span>&nbsp; $0.00</h6>
+						<div class="col-md-9">
+							<div class="col-md-2">
+								<h6 class="panel-title text-semibold"><span class="text-muted " style="font-size:13px;">Total Paid Hours&nbsp; <span style="color:black;">0.00</span></span></h6>
+							</div>
+							<div class="col-md-2">
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Estimated Wages <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
+							</div>
+							<div class="col-md-2">
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Net Sales <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
+							</div>
+							<div class="col-md-2">
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Total Tips&nbsp; <span style="color:black;">$0.00</span></span></h6>
+							</div>
+							<div class="col-md-2">
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Overtime <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
+							</div>
+							<div class="col-md-2">
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Early Clock-Ins <i class="icon-question4"></i>&nbsp;<span style="color:black;"> $0.00</span></span></h6>
+							</div>
 						</div>
 					</div>
 
