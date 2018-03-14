@@ -95,22 +95,22 @@
 					<div class="panel-body">
 						<div class="col-md-10">
 							<div class="col-md-2">
-								<h6 class="panel-title text-semibold"><span class="text-muted " style="font-size:13px;">Total Paid Hours&nbsp; <span style="color:black;">0.00</span></span></h6>
+								<h6 class="panel-title text-semibold"><span class="text-muted " style="font-size:11px;">Total Paid Hours&nbsp; <span style="color:black;">0.00</span></span></h6>
 							</div>
 							<div class="col-md-2">
-								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Estimated Wages <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Estimated Wages <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
 							</div>
 							<div class="col-md-2">
-								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Net Sales <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Net Sales <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
 							</div>
 							<div class="col-md-2">
-								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Total Tips&nbsp; <span style="color:black;">$0.00</span></span></h6>
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Total Tips<i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
 							</div>
 							<div class="col-md-2">
-								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Overtime <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Overtime <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
 							</div>
 							<div class="col-md-2">
-								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:13px;">Early Clock-Ins <i class="icon-question4"></i>&nbsp;<span style="color:black;"> $0.00</span></span></h6>
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Early Clock-Ins <i class="icon-question4"></i>&nbsp;<span style="color:black;"> $0.00</span></span></h6>
 							</div>
 						</div>
 					</div>
