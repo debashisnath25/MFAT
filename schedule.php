@@ -92,40 +92,56 @@
 						
 							
 									<ul class="nav nav-pills nav-pills-toolbar">
-										<li class="active"><a href="#toolbar-pill1" data-toggle="tab" aria-expanded="true">Day </a></li>
-										<li class=""><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Week</a></li>
-										<li class=""><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Month</a></li>
+										<div class="col-md-4">
+											<li class="active"><a href="#toolbar-pill1" data-toggle="tab" aria-expanded="true">Day </a></li>
+										</div>
+										<div class="col-md-4">
+											<li class=""><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Week</a></li>
+										</div>
+										<div class="col-md-4">
+											<li class=""><a href="#toolbar-pill2" data-toggle="tab" aria-expanded="false">Month</a></li>
+										</div>
 										
 									</ul>
 						
 					
 					</div>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-4">
 		
 			</div>
 	
-			<div class="col-md-2 ">
-			  <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-				<i class="icon-printer2">
-				</i>
-			  </span>
-			    <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-				<i class="icon-database">
-				</i>
-			  </span>
-			      <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-				<i class="icon-file-download">
-				</i>
-			  </span>
-			    <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-				<i class="icon-file-plus2">
-				</i>
-			  </span>
-			    <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
-				<i class="icon-close2"></i>
-			  </span>
-			  
+			<div class="col-md-4">
+				<div class="col-md-2 ">
+				  <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
+					<i class="icon-printer2">
+					</i>
+				  </span>
+				 </div>
+				 <div class="col-md-2 ">
+					<span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
+					<i class="icon-database">
+					</i>
+				  </span>
+				 </div>
+				 <div class="col-md-2 ">
+					<span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
+					<i class="icon-file-download">
+					</i>
+				  </span>
+				 </div>
+				<div class="col-md-2 ">
+					<span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
+					<i class="icon-file-plus2">
+					</i>
+				  </span>
+				  </div>
+				  <div class="col-md-2 ">
+					<span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
+					<i class="icon-close2"></i>
+				  </span>
+				  
+				</div>
 			</div>
 			<div class="col-md-1">
 			<button type="button" class="btn border-slate text-slate-800 btn-flat">Publish</button>

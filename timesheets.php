@@ -74,6 +74,102 @@
 			</div>
 		</div>
 	</div>
+
+	    <div class="panel panel-flat" style="background:#F9F9FB;padding:25px;height:90px;">
+      <div class="col-md-12">
+        <div class="col-md-3">
+			<div class="form-group" >
+				<button type="button" class="btn btn-default daterange-predefined"  style="padding-right:0px;">
+					<i class="icon-calendar22 position-left"></i>
+					<span>February 8, 2018 &nbsp; - &nbsp; March 9, 2018</span>
+					<b class="caret"></b>
+				</button>
+			</div>
+		</div>
+		
+			<div class="col-md-2">
+				<div class="form-group" >
+							<select class="bootstrap-select" data-width="100%" tabindex="-98">
+								<option value="" selected>Summary View</option>
+								<option value="Detailed View">Detailed View</option>
+								<option value="Day View">Day View</option>
+							</select>
+						</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group">					
+					<select data-placeholder="Select a State..." class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+						<option>By Status</option>
+						<optgroup label="Mountain Time Zone">
+							<option value="AZ">Arizona</option>
+							<option value="CO">Colorado</option>
+							<option value="ID">Idaho</option>
+							<option value="WY">Wyoming</option>
+						</optgroup>
+						<optgroup label="Central Time Zone">
+							<option value="AL">Alabama</option>
+							<option value="IA">Iowa</option>
+							<option value="KS">Kansas</option>
+							<option value="KY">Kentucky</option>
+						</optgroup>
+						<optgroup label="Eastern Time Zone">
+							<option value="CT">Connecticut</option>
+							<option value="FL">Florida</option>
+							<option value="MA">Massachusetts</option>
+							<option value="WV">West Virginia</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-2">
+					<div class="form-group">					
+					<select data-placeholder="Select a State..." class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+						<option>By Role</option>
+						<optgroup label="Mountain Time Zone">
+							<option value="AZ">Arizona</option>
+							<option value="CO">Colorado</option>
+							<option value="ID">Idaho</option>
+							<option value="WY">Wyoming</option>
+						</optgroup>
+						<optgroup label="Central Time Zone">
+							<option value="AL">Alabama</option>
+							<option value="IA">Iowa</option>
+							<option value="KS">Kansas</option>
+							<option value="KY">Kentucky</option>
+						</optgroup>
+						<optgroup label="Eastern Time Zone">
+							<option value="CT">Connecticut</option>
+							<option value="FL">Florida</option>
+							<option value="MA">Massachusetts</option>
+							<option value="WV">West Virginia</option>
+						</optgroup>
+					</select>
+				</div>
+			  
+			</div>
+			<div class="col-md-1">
+			  <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
+				<i class="icon-printer2">
+				</i>
+			  </span>
+			    <span class="input-group-addon" style="width:48%;border:1px solid #cccccc;">
+				<i class="icon-file-download">
+				</i>
+			  </span>
+			</div>
+			<div class="col-md-1">
+			<button type="button" class="btn border-slate text-slate-800 btn-flat">Invite Team</button>
+			
+			</div>
+				<div class="col-md-1">
+			
+					<button type="button" class="btn btn-primary" style="width:100%;">Add
+			  </button>
+			</div>
+		
+		
+      </div>
+    </div>
 	<!-- /page header -->
 
 
@@ -104,7 +200,7 @@
 								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Net Sales <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
 							</div>
 							<div class="col-md-2">
-								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Total Tips<i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
+								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Total Tips <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
 							</div>
 							<div class="col-md-2">
 								<h6 class="panel-title text-semibold"><span class="text-muted" style="font-size:11px;">Overtime <i class="icon-question4"></i>&nbsp; <span style="color:black;">$0.00</span></span></h6>
