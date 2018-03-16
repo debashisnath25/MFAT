@@ -195,7 +195,7 @@
 									No upcoming time-off requests. Yay!
 								</div>
 								<div class="panel-heading text-center">
-									<a href="javascript:void(0);" class="btn btn-primary">View all Time off</a>
+									<a href="listing_time_off.php" class="btn btn-primary">View all Time off</a>
 								</div>
 							</div>
 						</div>
@@ -222,7 +222,7 @@
 										</ul>
 									</div>
 									<div class="panel-heading text-center">
-										<a href="javascript:void(0);" class="btn btn-primary">View All Shift Feedback</a>
+										<a href="reports.php" class="btn btn-primary">View All Shift Feedback</a>
 									</div>
 								</li>
 							</ul>
@@ -239,10 +239,7 @@
 											</div>
 
 											<div class="media-body">
-												<a href="#" class="media-heading">
-													<span class="text-semibold">James Alexander</span>
-												</a>
-
+												<span class="text-semibold">James Alexander</span><br/>
 												<span class="text-muted">EMPLOYEE</span>
 											</div>
 										</li>
@@ -253,9 +250,7 @@
 											</div>
 
 											<div class="media-body">
-												<a href="#" class="media-heading">
-													<span class="text-semibold">Margo Baker</span>
-												</a>
+												<span class="text-semibold">Margo Baker</span><br/>
 												<span class="text-muted">P: (898) 169-5676</span><br/>
 												<span class="text-muted">MANAGER</span>
 											</div>

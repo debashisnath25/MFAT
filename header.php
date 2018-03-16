@@ -146,7 +146,7 @@
 						<li><a href="manage_plan.php"><i class="icon-comment-discussion"></i> Manage Plan</a></li>
 						<li><a href="billing.php"><i class="icon-coins"></i> Billings</a></li>
 						<li class="divider"></li>
-						<li><a href="logout.php"><i class="icon-switch2"></i> Logout</a></li>
+						<li><a href="index.php"><i class="icon-switch2"></i> Logout</a></li>
 					</ul>
 				</li>
 			</ul>

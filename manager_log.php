@@ -38,13 +38,11 @@
           </div>
         </div>
         <div class="col-md-2">
-          <button type="button" class="btn btn-primary" style="width:100%;">Create New Board
-          </button>
+          <button type="button" class="btn btn-primary" style="width:100%;" data-toggle="modal" data-target="#modal_new_board">Create New Board</button>
         </div>
         <div class="col-md-1">
-          <span class="input-group-addon">
-            <i class="icon-calendar22">
-            </i>
+          <span class="btn btn-success">
+            <i class="icon-printer"> PRINT</i>
           </span>
         </div>
       </div>
@@ -144,7 +142,7 @@
                     </div>
                   </div>
                 </div>
-							<div class="panel border-left-lg border-left-primary timeline-content">
+				<div class="panel border-left-lg border-left-primary timeline-content">
                   <div class="panel-body">
                     <div class="row">
                       <div class="col-md-12">
@@ -214,7 +212,7 @@
 					</div>
 				  </div>
                   <div class="panel-heading text-center">
-                    <a href="javascript:void(0);" class="btn btn-primary">View all Reports</a>
+                    <a href="reports.php" class="btn btn-primary">View all Reports</a>
                   </div>
                 </div>
               </div>
@@ -233,7 +231,7 @@
                     No upcoming time-off requests. Yay!
                   </div>
                   <div class="panel-heading text-center">
-                    <a href="javascript:void(0);" class="btn btn-primary">View all Time off</a>
+                    <a href="listing_time_off.php" class="btn btn-primary">View all Time off</a>
                   </div>
                 </div>
               </div>
@@ -263,52 +261,12 @@
                       </ul>
                     </div>
                     <div class="panel-heading text-center">
-                      <a href="javascript:void(0);" class="btn btn-primary">View All Shift Feedback</a>
+                      <a href="reports.php" class="btn btn-primary">View All Shift Feedback</a>
                     </div>
                   </li>
                 </ul>
               </div>
               <!-- /daily financials -->
-              <div class="panel panel-flat">
-                <div class="panel-heading">
-                  <h6 class="panel-title text-semibold">Available to Call-In
-                  </h6>
-                  <div class="category-content">
-                    <ul class="media-list">
-                      <li class="media">
-                        <div class="media-left">
-                          <img src="images/face10.jpg" class="img-circle img-sm" alt="">
-                        </div>
-                        <div class="media-body">
-                          <a href="#" class="media-heading">
-                            <span class="text-semibold">James Alexander
-                            </span>
-                          </a>
-                          <span class="text-muted">EMPLOYEE
-                          </span>
-                        </div>
-                      </li>
-                      <li class="media">
-                        <div class="media-left">
-                          <img src="images/face3.jpg" class="img-circle img-sm" alt="">
-                        </div>
-                        <div class="media-body">
-                          <a href="#" class="media-heading">
-                            <span class="text-semibold">Margo Baker
-                            </span>
-                          </a>
-                          <span class="text-muted">P: (898) 169-5676
-                          </span>
-                          <br/>
-                          <span class="text-muted">MANAGER
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- /dashboard content -->
         </div>
@@ -318,6 +276,36 @@
     </div>
     <!-- /page container -->
     <!-- Footer -->
+	<div id="modal_new_board" class="modal fade in" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header bg-info">
+				<button type="button" class="close" data-dismiss="modal"><i class="icon-close2"></i></button>
+				<h5 class="modal-title text-center">Create New Board</h5>
+			</div>
+
+			<form action="#">
+				<div class="modal-body">
+					<div class="form-group">
+						<label>Board Name</label>
+						<div class="multi-select-full">
+							<input type="text" class="form-control" placeholder="Enter a name for your board...">
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Board Description</label>
+						<textarea rows="3" cols="3" maxlength="500" class="form-control maxlength-textarea" placeholder="This textarea has a limit of 500 chars."></textarea>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="reset" class="btn btn-link">Reset</button>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
     <?php include("footer.php");?>
     <script type="text/javascript" src="js/dashboard.js">
     </script>

@@ -7,20 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MFAT | Timesheets</title>
 	<?php include("metalinks.php");?>
-	<script>
-	 $('#idTourDateDetails').datepicker({
-     dateFormat: 'dd-mm-yy',
-     minDate: '+5d',
-     changeMonth: true,
-     changeYear: true,
-     altField: "#idTourDateDetailsHidden",
-     altFormat: "yy-mm-dd"
- });
-	</script>
+	
 	<style>
-		.daterange-single
+		.show-calendar
 		{
-			z-index: 100000;
+			z-index: 2050 !important;
+		}
+		.AnyTime-win
+		{
+			z-index: 2050 !important;
 		}
 	</style>
 </head>
@@ -29,19 +24,7 @@
 
 	<!-- Main navbar -->
 	<?php include("header.php");?>
-	<div class="navbar-collapse collapse" id="navbar-second-toggle" style="background:white;">
-	   <ul class="nav navbar-nav">
-		<li class="active"><a href="javascript:void(0);" style="color:#9c70c2;font-weight: 600;"> Timesheets</a></li>
-
-		<li class="dropdown mega-menu mega-menu-wide">
-		 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" style="color:#9c70c2;font-weight: 600;">Errors</a>
-		</li>
-
-		<li class="dropdown mega-menu mega-menu-wide">
-		 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" style="color:#9c70c2;font-weight: 600;">Company Level</a>
-		</li>
-	   </ul>
-	 </div>
+	
 	<!-- Page header -->
 
 
@@ -57,17 +40,17 @@
 			</div>
 		</div>
 		
-			<div class="col-md-2">
-				<div class="form-group" >
-							<select class="bootstrap-select" data-width="100%" tabindex="-98">
-								<option value="" selected>Summary View</option>
-								<option value="Detailed View">Detailed View</option>
-								<option value="Day View">Day View</option>
-							</select>
-						</div>
-			</div>
+		<div class="col-md-2">
+			<div class="form-group" >
+						<select class="bootstrap-select" data-width="100%" tabindex="-98">
+							<option value="" selected>Summary View</option>
+							<option value="Detailed View">Detailed View</option>
+							<option value="Day View">Day View</option>
+						</select>
+					</div>
+				</div>
 
-	<div class="col-md-3">
+				<div class="col-md-3">
 						<div class="form-group">
 							<select class="bootstrap-select" data-width="100%" tabindex="-98">
 								<option value="" selected>All Employees</option>
@@ -82,12 +65,9 @@
 			
 			</div>
 				<div class="col-md-2">
-			
 					<button type="button" class="btn btn-primary" style="width:100%;" data-toggle="modal" data-target="#modal_add_schedule">Add Time Card
 			  </button>
 			</div>
-		
-		
       </div>
     </div>
 	<!-- /page header -->
@@ -314,8 +294,7 @@
 																		<label style="color: #959eac;font-size: 15px;text-transform: uppercase;font-weight: 700;">From</label>
 																		<div class="input-group">
 																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
-																			<input type="text" class="form-control pickatime-limits picker__input" placeholder="Try me.." readonly="" id="P1506058119" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P1506058119_root"><div class="picker picker--time" id="P1506058119_root" aria-hidden="true"><div class="picker__holder" tabindex="-1" style=""><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><ul class="picker__list" role="listbox" aria-controls="P1506058119"><li class="picker__list-item" data-pick="450" role="option" aria-label="7:30 AM">7:30 AM</li><li class="picker__list-item" data-pick="480" role="option" aria-label="8:00 AM">8:00 AM</li><li class="picker__list-item" data-pick="510" role="option" aria-label="8:30 AM">8:30 AM</li><li class="picker__list-item" data-pick="540" role="option" aria-label="9:00 AM">9:00 AM</li><li class="picker__list-item" data-pick="570" role="option" aria-label="9:30 AM">9:30 AM</li><li class="picker__list-item" data-pick="600" role="option" aria-label="10:00 AM">10:00 AM</li><li class="picker__list-item" data-pick="630" role="option" aria-label="10:30 AM">10:30 AM</li><li class="picker__list-item" data-pick="660" role="option" aria-label="11:00 AM">11:00 AM</li><li class="picker__list-item" data-pick="690" role="option" aria-label="11:30 AM">11:30 AM</li><li class="picker__list-item" data-pick="720" role="option" aria-label="12:00 PM">12:00 PM</li><li class="picker__list-item" data-pick="750" role="option" aria-label="12:30 PM">12:30 PM</li><li class="picker__list-item" data-pick="780" role="option" aria-label="1:00 PM">1:00 PM</li><li class="picker__list-item" data-pick="810" role="option" aria-label="1:30 PM">1:30 PM</li><li class="picker__list-item picker__list-item--highlighted picker__list-item--viewset" data-pick="840" role="option" aria-label="2:00 PM" aria-activedescendant="true">2:00 PM</li><li role="presentation"><button class="picker__button--clear" type="button" data-clear="1" aria-controls="P1506058119" disabled="disabled">Clear</button></li></ul></div></div></div></div></div>
-																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
+																			<input type="text" class="form-control" id="anytime-time" value="12:34" readonly="">
 																		</div>
 																	</div>
 																	<div class="col-sm-4">
@@ -345,10 +324,9 @@
 																<div class="row">
 																	<div class="col-sm-6">
 																		<label style="color: #959eac;font-size: 15px;text-transform: uppercase;font-weight: 700;">Clock In Time</label>
-																			<div class="input-group">
+																		<div class="input-group">
 																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
-																			<input type="text" class="form-control pickatime-limits picker__input" placeholder="Try me.." readonly="" id="P1506058119" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P1506058119_root"><div class="picker picker--time" id="P1506058119_root" aria-hidden="true"><div class="picker__holder" tabindex="-1" style=""><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><ul class="picker__list" role="listbox" aria-controls="P1506058119"><li class="picker__list-item" data-pick="450" role="option" aria-label="7:30 AM">7:30 AM</li><li class="picker__list-item" data-pick="480" role="option" aria-label="8:00 AM">8:00 AM</li><li class="picker__list-item" data-pick="510" role="option" aria-label="8:30 AM">8:30 AM</li><li class="picker__list-item" data-pick="540" role="option" aria-label="9:00 AM">9:00 AM</li><li class="picker__list-item" data-pick="570" role="option" aria-label="9:30 AM">9:30 AM</li><li class="picker__list-item" data-pick="600" role="option" aria-label="10:00 AM">10:00 AM</li><li class="picker__list-item" data-pick="630" role="option" aria-label="10:30 AM">10:30 AM</li><li class="picker__list-item" data-pick="660" role="option" aria-label="11:00 AM">11:00 AM</li><li class="picker__list-item" data-pick="690" role="option" aria-label="11:30 AM">11:30 AM</li><li class="picker__list-item" data-pick="720" role="option" aria-label="12:00 PM">12:00 PM</li><li class="picker__list-item" data-pick="750" role="option" aria-label="12:30 PM">12:30 PM</li><li class="picker__list-item" data-pick="780" role="option" aria-label="1:00 PM">1:00 PM</li><li class="picker__list-item" data-pick="810" role="option" aria-label="1:30 PM">1:30 PM</li><li class="picker__list-item picker__list-item--highlighted picker__list-item--viewset" data-pick="840" role="option" aria-label="2:00 PM" aria-activedescendant="true">2:00 PM</li><li role="presentation"><button class="picker__button--clear" type="button" data-clear="1" aria-controls="P1506058119" disabled="disabled">Clear</button></li></ul></div></div></div></div></div>
-																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
+																			<input type="text" class="form-control" id="anytime-time" value="12:34" readonly="">
 																		</div>
 																	</div>
 
@@ -356,8 +334,7 @@
 																		<label style="color: #959eac;font-size: 15px;text-transform: uppercase;font-weight: 700;">Clock Out Time</label>
 																			<div class="input-group">
 																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
-																			<input type="text" class="form-control pickatime-limits picker__input" placeholder="Try me.." readonly="" id="P1506058119" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P1506058119_root"><div class="picker picker--time" id="P1506058119_root" aria-hidden="true"><div class="picker__holder" tabindex="-1" style=""><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><ul class="picker__list" role="listbox" aria-controls="P1506058119"><li class="picker__list-item" data-pick="450" role="option" aria-label="7:30 AM">7:30 AM</li><li class="picker__list-item" data-pick="480" role="option" aria-label="8:00 AM">8:00 AM</li><li class="picker__list-item" data-pick="510" role="option" aria-label="8:30 AM">8:30 AM</li><li class="picker__list-item" data-pick="540" role="option" aria-label="9:00 AM">9:00 AM</li><li class="picker__list-item" data-pick="570" role="option" aria-label="9:30 AM">9:30 AM</li><li class="picker__list-item" data-pick="600" role="option" aria-label="10:00 AM">10:00 AM</li><li class="picker__list-item" data-pick="630" role="option" aria-label="10:30 AM">10:30 AM</li><li class="picker__list-item" data-pick="660" role="option" aria-label="11:00 AM">11:00 AM</li><li class="picker__list-item" data-pick="690" role="option" aria-label="11:30 AM">11:30 AM</li><li class="picker__list-item" data-pick="720" role="option" aria-label="12:00 PM">12:00 PM</li><li class="picker__list-item" data-pick="750" role="option" aria-label="12:30 PM">12:30 PM</li><li class="picker__list-item" data-pick="780" role="option" aria-label="1:00 PM">1:00 PM</li><li class="picker__list-item" data-pick="810" role="option" aria-label="1:30 PM">1:30 PM</li><li class="picker__list-item picker__list-item--highlighted picker__list-item--viewset" data-pick="840" role="option" aria-label="2:00 PM" aria-activedescendant="true">2:00 PM</li><li role="presentation"><button class="picker__button--clear" type="button" data-clear="1" aria-controls="P1506058119" disabled="disabled">Clear</button></li></ul></div></div></div></div></div>
-																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
+																			<input type="text" class="form-control" id="anytime-time" value="12:34" readonly="">
 																		</div>
 																	</div>
 
@@ -393,19 +370,17 @@
 																<div class="row">
 																	<div class="col-sm-6">
 																		<label style="color: #959eac;font-size: 15px;text-transform: uppercase;font-weight: 700;">Break Start</label>
-																			<div class="input-group">
+																		<div class="input-group">
 																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
-																			<input type="text" class="form-control pickatime-limits picker__input" placeholder="Try me.." readonly="" id="P1506058119" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P1506058119_root"><div class="picker picker--time" id="P1506058119_root" aria-hidden="true"><div class="picker__holder" tabindex="-1" style=""><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><ul class="picker__list" role="listbox" aria-controls="P1506058119"><li class="picker__list-item" data-pick="450" role="option" aria-label="7:30 AM">7:30 AM</li><li class="picker__list-item" data-pick="480" role="option" aria-label="8:00 AM">8:00 AM</li><li class="picker__list-item" data-pick="510" role="option" aria-label="8:30 AM">8:30 AM</li><li class="picker__list-item" data-pick="540" role="option" aria-label="9:00 AM">9:00 AM</li><li class="picker__list-item" data-pick="570" role="option" aria-label="9:30 AM">9:30 AM</li><li class="picker__list-item" data-pick="600" role="option" aria-label="10:00 AM">10:00 AM</li><li class="picker__list-item" data-pick="630" role="option" aria-label="10:30 AM">10:30 AM</li><li class="picker__list-item" data-pick="660" role="option" aria-label="11:00 AM">11:00 AM</li><li class="picker__list-item" data-pick="690" role="option" aria-label="11:30 AM">11:30 AM</li><li class="picker__list-item" data-pick="720" role="option" aria-label="12:00 PM">12:00 PM</li><li class="picker__list-item" data-pick="750" role="option" aria-label="12:30 PM">12:30 PM</li><li class="picker__list-item" data-pick="780" role="option" aria-label="1:00 PM">1:00 PM</li><li class="picker__list-item" data-pick="810" role="option" aria-label="1:30 PM">1:30 PM</li><li class="picker__list-item picker__list-item--highlighted picker__list-item--viewset" data-pick="840" role="option" aria-label="2:00 PM" aria-activedescendant="true">2:00 PM</li><li role="presentation"><button class="picker__button--clear" type="button" data-clear="1" aria-controls="P1506058119" disabled="disabled">Clear</button></li></ul></div></div></div></div></div>
-																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
+																			<input type="text" class="form-control" id="anytime-time" value="12:34" readonly="">
 																		</div>
 																	</div>
 
 																			<div class="col-sm-6">
 																		<label style="color: #959eac;font-size: 15px;text-transform: uppercase;font-weight: 700;">Break End</label>
-																			<div class="input-group">
+																		<div class="input-group">
 																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
-																			<input type="text" class="form-control pickatime-limits picker__input" placeholder="Try me.." readonly="" id="P1506058119" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P1506058119_root"><div class="picker picker--time" id="P1506058119_root" aria-hidden="true"><div class="picker__holder" tabindex="-1" style=""><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><ul class="picker__list" role="listbox" aria-controls="P1506058119"><li class="picker__list-item" data-pick="450" role="option" aria-label="7:30 AM">7:30 AM</li><li class="picker__list-item" data-pick="480" role="option" aria-label="8:00 AM">8:00 AM</li><li class="picker__list-item" data-pick="510" role="option" aria-label="8:30 AM">8:30 AM</li><li class="picker__list-item" data-pick="540" role="option" aria-label="9:00 AM">9:00 AM</li><li class="picker__list-item" data-pick="570" role="option" aria-label="9:30 AM">9:30 AM</li><li class="picker__list-item" data-pick="600" role="option" aria-label="10:00 AM">10:00 AM</li><li class="picker__list-item" data-pick="630" role="option" aria-label="10:30 AM">10:30 AM</li><li class="picker__list-item" data-pick="660" role="option" aria-label="11:00 AM">11:00 AM</li><li class="picker__list-item" data-pick="690" role="option" aria-label="11:30 AM">11:30 AM</li><li class="picker__list-item" data-pick="720" role="option" aria-label="12:00 PM">12:00 PM</li><li class="picker__list-item" data-pick="750" role="option" aria-label="12:30 PM">12:30 PM</li><li class="picker__list-item" data-pick="780" role="option" aria-label="1:00 PM">1:00 PM</li><li class="picker__list-item" data-pick="810" role="option" aria-label="1:30 PM">1:30 PM</li><li class="picker__list-item picker__list-item--highlighted picker__list-item--viewset" data-pick="840" role="option" aria-label="2:00 PM" aria-activedescendant="true">2:00 PM</li><li role="presentation"><button class="picker__button--clear" type="button" data-clear="1" aria-controls="P1506058119" disabled="disabled">Clear</button></li></ul></div></div></div></div></div>
-																			<span class="input-group-addon"><i class="icon-alarm"></i></span>
+																			<input type="text" class="form-control" id="anytime-time" value="12:34" readonly="">
 																		</div>
 																	</div>
 
@@ -466,13 +441,7 @@
 					</div>
 				</div>
 	<!-- Footer -->
-		<script>
-	$(function() {
-  $('.daterange-single').datetimepicker({
-    language: 'pt-BR'
-  });
-});
-	</script>
+
 	<?php include("footer.php");?>
 
 	<script type="text/javascript" src="js/datatables.min.js"></script>

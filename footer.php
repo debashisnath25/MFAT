@@ -1,10 +1,9 @@
 <div id="modal_form_message" class="modal fade in" style="display: none;">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header">
+			<div class="modal-header bg-info">
 				<button type="button" class="close" data-dismiss="modal"><i class="icon-close2"></i></button>
 				<h5 class="modal-title text-center">Send an email to your team</h5>
-				<h6 class="text-center">For full messaging, download the free Homebase mobile app.</h6>
 			</div>
 
 			<form action="#">
@@ -51,13 +50,11 @@
 	<!-- Theme JS files -->
 	<script type="text/javascript" src="js/d3.min.js"></script>
 	<script type="text/javascript" src="js/d3_tooltip.js"></script>
-	<script type="text/javascript" src="js/switchery.min.js"></script>
 	<script type="text/javascript" src="js/uniform.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap_multiselect.js"></script>
 	<script type="text/javascript" src="js/moment.min.js"></script>
 	<script type="text/javascript" src="js/daterangepicker.js"></script>
 
-	<script type="text/javascript" src="js/app.js"></script>
 
 	<script type="text/javascript" src="js/uniform.min.js"></script>
 	<script type="text/javascript" src="js/pnotify.min.js"></script>

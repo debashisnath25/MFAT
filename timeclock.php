@@ -59,7 +59,7 @@
 										</div>
 
 										<div class="tab-pane text-center" id="basic-rounded-justified-tab3">
-											<h4 class="">Allow employees to clock in and out from any web browser.</h4>
+											<h4 class="">Download the Time Clock app on any iOS or Android mobile phone.</h4>
 											<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_web_clock"><i class="icon-alarm"></i> Launch Web Time Clock</button>
 										</div>
 									</div>

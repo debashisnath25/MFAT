@@ -796,7 +796,7 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">×</button>
+								<button type="button" class="close" data-dismiss="modal"><i class="icon-close2"></i></button>
 								<h5 class="modal-title">Add New Employee</h5>
 							</div>
 
@@ -867,18 +867,10 @@
 																	</div>
 																	<div class="col-sm-6">
 																		<label style="color: #959eac;font-size: 15px;text-transform: uppercase;font-weight: 700;">Role</label>
-																				<select data-placeholder="Select a State..." class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-																					<option>By Role</option>
-																					<optgroup label="Mountain Time Zone">
-																						<option value="AZ">Arizona</option>
-																						<option value="CO">Colorado</option>
-																						<option value="ID">Idaho</option>
-																						<option value="WY">Wyoming</option>
-																					
-																				</select>
+																		<select data-placeholder="Select a State..." class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+																				<option value="Manager">Manager</option>
+																		</select>
 																	</div>
-
-																	
 																</div>
 															</div>
 															<div class="form-group">
@@ -942,34 +934,34 @@
 													<div class="col-md-12">
 													<span style="vertical-align: middle;width: 10px;height: 10px;margin-right: 7px;border-radius: 3px;background-color: #E96E57;"></span>
 													<span style="font-weight: 600;margin-right: 10px;vertical-align: middle;color: #40A6B7;">7 am-10 pm</span>
-													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manegar</span>
+													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manager</span>
 													</div>
 													<div class="col-md-12">
 													<span style="vertical-align: middle;width: 10px;height: 10px;margin-right: 7px;border-radius: 3px;background-color: #E96E57;"></span>
 													<span style="font-weight: 600;margin-right: 10px;vertical-align: middle;color: #40A6B7;">7 am-10 pm</span>
-													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manegar</span>
+													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manager</span>
 													</div>
 													<div class="col-md-12">
 													<span style="vertical-align: middle;width: 10px;height: 10px;margin-right: 7px;border-radius: 3px;background-color: #E96E57;"></span>
 													<span style="font-weight: 600;margin-right: 10px;vertical-align: middle;color: #40A6B7;">7 am-10 pm</span>
-													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manegar</span>
+													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manager</span>
 													</div>
 												</div>
 												<div class="col-md-6">
 												<div class="col-md-12">
 												<span style="vertical-align: middle;width: 10px;height: 10px;margin-right: 7px;border-radius: 3px;background-color: #E96E57;"></span>
 													<span style="font-weight: 600;margin-right: 10px;vertical-align: middle;color: #40A6B7;">7 am-10 pm</span>
-													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manegar</span>
+													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manager</span>
 													</div>
 													<div class="col-md-12">
 													<span style="vertical-align: middle;width: 10px;height: 10px;margin-right: 7px;border-radius: 3px;background-color: #E96E57;"></span>
 													<span style="font-weight: 600;margin-right: 10px;vertical-align: middle;color: #40A6B7;">7 am-10 pm</span>
-													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manegar</span>
+													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manager</span>
 													</div>
 													<div class="col-md-12">
 													<span style="vertical-align: middle;width: 10px;height: 10px;margin-right: 7px;border-radius: 3px;background-color: #E96E57;"></span>
 													<span style="font-weight: 600;margin-right: 10px;vertical-align: middle;color: #40A6B7;">7 am-10 pm</span>
-													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manegar</span>
+													<span style="vertical-align: middle;color: #40A6B7;font-weight: 600;cursor: pointer;">Manager</span>
 													</div>
 												</div>
 											</div>

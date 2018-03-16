@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MFAT | Schedule</title>
+	<title>MFAT | Team Availability</title>
 
 	<!-- Global stylesheets -->
 	<?php include("metalinks.php");?>
@@ -28,12 +28,9 @@
 	<!-- /second navbar -->
 
 	<?php include("schedule_header.php");?>
-	<div class="panel panel-flat" style="background:white;height:40px;">
-      <div class="col-md-12">
-		<div class="col-md-10"></div>
-			<div class="col-md-2 text-right">
-				<a href="javascript:void(0);"><h5 class="text-semibold">Export Report</h5></a>
-			</div>
+	<div class="panel panel-flat" style="background:#fff;padding:10px;height:60px;">
+      <div class="col-md-12 text-right">
+		<button type="button" class="btn btn-success btn-sm"><span class="text-bold" style="font-size:13px;">Export Report</span></button>
       </div>
     </div>
 

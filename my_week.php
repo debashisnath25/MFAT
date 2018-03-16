@@ -61,10 +61,10 @@
 										<h6 class="panel-title text-semibold">Your Schedule</h6>
 									</div>
 									<div class="col-md-2 text-right">
-										<a href="schedule.php" class="btn btn-primary">My Schedule</a>
+										<a href="javascript:void(0);" class="btn btn-primary">My Schedule</a>
 									</div>
 									<div class="col-md-2 text-right">
-										<a href="schedule.php" class="btn btn-primary">Open Shifts</a>
+										<a href="javascript:void(0);" class="btn btn-primary">Open Shifts</a>
 									</div>
 								</div>
 							</div>
@@ -101,10 +101,10 @@
 										<h6 class="panel-title text-semibold">Shift Covers & Trades</h6>
 									</div>
 									<div class="col-md-2 text-right">
-										<a href="schedule.php" class="btn btn-primary">Incoming Requests</a>
+										<a href="javascript:void(0);" class="btn btn-primary">Incoming Requests</a>
 									</div>
 									<div class="col-md-2 text-right">
-										<a href="schedule.php" class="btn btn-primary">Your Requests</a>
+										<a href="javascript:void(0);" class="btn btn-primary">Your Requests</a>
 									</div>
 								</div>
 							</div>
@@ -218,7 +218,7 @@
 									No upcoming time-off requests. Yay!
 								</div>
 								<div class="panel-heading text-center">
-									<a href="javascript:void(0);" class="btn btn-primary">View all Time off</a>
+									<a href="listing_time_off.php" class="btn btn-primary">View all Time off</a>
 								</div>
 							</div>
 						</div>

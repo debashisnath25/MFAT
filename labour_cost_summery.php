@@ -102,6 +102,8 @@ html,body {
 	<script type="text/javascript" src="js/switch.min.js"></script>
 	<script type="text/javascript" src="js/form_checkboxes_radios.js"></script>
 
+
+
 	<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
 <script>
 zingchart.THEME="classic";

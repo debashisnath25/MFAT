@@ -114,7 +114,26 @@ html,body {
 	<script type="text/javascript" src="js/uniform.min.js"></script>
 	<script type="text/javascript" src="js/switchery.min.js"></script>
 	<script type="text/javascript" src="js/switch.min.js"></script>
-	<script type="text/javascript" src="js/form_checkboxes_radios.js"></script>
+
+	<script type="text/javascript" src="js/datatables.min.js"></script>
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<script type="text/javascript" src="js/jszip.min.js"></script>
+	<script type="text/javascript" src="js/pdfmake.min.js"></script>
+	<script type="text/javascript" src="js/vfs_fonts.min.js"></script>
+	<script type="text/javascript" src="js/buttons.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/datatables_extension_buttons_html5.js"></script>
+	<script type="text/javascript" src="js/jgrowl.min.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
+	<script type="text/javascript" src="js/anytime.min.js"></script>
+	<script type="text/javascript" src="js/picker.js"></script>
+	<script type="text/javascript" src="js/picker.date.js"></script>
+	<script type="text/javascript" src="js/picker.time.js"></script>
+	<script type="text/javascript" src="js/legacy.js"></script>
+	<script type="text/javascript" src="js/picker_date.js"></script>
+	<script type="text/javascript" src="js/interactions.min.js"></script>
+	<script type="text/javascript" src="js/form_select2.js"></script>
 
 	<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
 <script>

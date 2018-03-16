@@ -16,17 +16,9 @@
     <?php include("header.php");?>
 	<?php include("schedule_header.php");?>
     <!-- /main navbar -->
-    <div class="panel panel-flat" style="background:#fff;padding:25px;height:90px;">
-      <div class="col-md-12">
-        <div class="col-md-3">
-			<div class="page-title " style="padding:0px !important;margin-top:-5px;">
-				<h1><span class="text-bold" style="font-size:20px;">Time off</span></h1>	
-			</div>
-        </div>
-		<div class="col-md-8"></div>
-		<div class="col-md-1">
+    <div class="panel panel-flat" style="background:#fff;padding:10px;height:60px;">
+      <div class="col-md-12 text-right">
 			<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_time_off"><span class="text-bold" style="font-size:13px;">Add Time-off</span></button>
-		</div>
       </div>
     </div>
     <!-- Page header -->
@@ -129,7 +121,7 @@
 			<div class="modal-content">
 			<div class="modal-header bg-info">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h5 class="modal-title">Add Time-off</h5>
+				<h5 class="modal-title text-center">Add Time-off</h5>
 			</div>
 			<form method="POST">
 				<div class="modal-body">

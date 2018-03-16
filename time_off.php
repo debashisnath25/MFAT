@@ -29,17 +29,11 @@
 
 			<!-- Main content -->
 			<div class="content-wrapper">
-
 				<!-- Toolbar -->
-
-
-
 				<!-- User profile -->
 				<div class="row">
 					<?php include ('profile_sidebar.php');?>
 					<div class="col-lg-9">
-						
-						
 						<div class="panel panel-flat">
 							<div class="panel-heading" style="border-bottom: 1px solid rgb(237, 237, 237);">
 								<div class="row">
@@ -50,29 +44,42 @@
 										<button type="button" class="btn btn-primary">Save Changes</button>
 									</div>
 										</div>
-						</div>
-								<div class="form-group" style="margin-top:15px;">
+								</div>
+								<div class="form-group" style="margin-top:7px;">
 									<div class="row">
 										
-										<div class="col-md-8">
-											<div class="col-md-3">
+										<div class="col-md-12">
+											<div class="col-md-4">
 												 <label style="font-size:14px;">Max Employees Able To Take Time Off Per Day</label>
 											</div>
-											<div class="col-md-9">
-												<input type="text" value="1031" class="form-control">
+											<div class="col-md-4">
+												<input type="text" value="14" class="form-control">
 											</div>
 										</div>
 									</div>
 								</div>
-										
-							<div class="form-group" style="margin-left:15px;">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" class="styled">
-										<span style="font-size:16px;">No time off requests before <input type="text" value="1031" class="form-control" style="width:40px;padding:0 !important"> days prior</span>
-									</label>
+							
+								<div class="form-group" style="margin-top:7px;">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled">
+														<span style="font-size:14px;">No time off requests before</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-1">
+												<input type="text" value="14" class="form-control" style="width:100%;">
+											</div>
+											<div class="col-md-3" style="margin-top:7px;">
+												<span style="font-size:14px;">days prior</span>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>	
+							
 							<div class="form-group">
 								<div class="row"style="padding-left:10px;">
 									<div class="col-md-8">

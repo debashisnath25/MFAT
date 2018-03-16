@@ -96,18 +96,15 @@
 			  </span>
 			</div>
 			<div class="col-md-1">
-			<button type="button" class="btn border-slate text-slate-800 btn-flat">Invite Team</button>
+			<button type="button" class="btn border-slate text-slate-800 btn-flat" data-toggle="modal" data-target="#modal_invite_team">Invite Team</button>
 			
 			</div>
 				<div class="col-md-1">
-			
 					<button type="button" class="btn btn-primary" style="width:100%;">Add
 			  </button>
 			</div>
-		
-		
-      </div>
-    </div>
+		  </div>
+		</div>
     <!-- Page header -->
     <!-- /page header -->
     <!-- Page container -->
@@ -230,6 +227,37 @@
     </div>
     <!-- /page container -->
     <!-- Footer -->
+	<div id="modal_invite_team" class="modal fade in" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header bg-info">
+				<button type="button" class="close" data-dismiss="modal"><i class="icon-close2"></i></button>
+				<h5 class="modal-title text-center">Send an email invite to your team</h5>
+			</div>
+			
+			<form action="#">
+				<div class="modal-body">
+					<h6 class="text-center">Employees will be emailed an invitation to access their personal account. Their account will allow them to view their schedule, set their availability, request time off, and more.</h6>
+					<div class="form-group">
+						<label>Who do you want to invite?</label>
+						<div class="multi-select-full">
+							<select class="multiselect" style="display: none;">
+								<option value="Entire Team">Entire Team</option>
+								<option value="Employees">Employees</option>
+								<option value="Managers">Managers</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="reset" class="btn btn-link">Reset</button>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
     <?php include("footer.php");?>
     
 	<script type="text/javascript" src="js/datatables.min.js"></script>

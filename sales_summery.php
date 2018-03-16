@@ -158,6 +158,18 @@ html,body {
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/datatables_extension_buttons_html5.js"></script>
 
+	<script type="text/javascript" src="js/jgrowl.min.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
+	<script type="text/javascript" src="js/anytime.min.js"></script>
+	<script type="text/javascript" src="js/picker.js"></script>
+	<script type="text/javascript" src="js/picker.date.js"></script>
+	<script type="text/javascript" src="js/picker.time.js"></script>
+	<script type="text/javascript" src="js/legacy.js"></script>
+	<script type="text/javascript" src="js/picker_date.js"></script>
+	<script type="text/javascript" src="js/interactions.min.js"></script>
+	<script type="text/javascript" src="js/form_select2.js"></script>
+
 	<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
 <script>
 var myConfig = {
